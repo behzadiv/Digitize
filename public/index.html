@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +10,10 @@
     <!-- َApp bar -->
     <div class="flex items-center justify-between px-5 mt-10 mb-6">
       <div>لوگو</div>
-      <div class="font-sans font-bold text-xl">ساعت هوشمند</div>
-      <div class="w-6 h-6 bg-stone-50 flex justify-center items-center rounded p-1">
+      <div class="font-bold text-xl">ساعت هوشمند</div>
+      <div
+        class="w-6 h-6 bg-white flex justify-center items-center rounded p-1"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -26,6 +28,44 @@
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
           />
         </svg>
+      </div>
+    </div>
+    <!-- filter & sort section -->
+    <div class="flex items-center gap-4 px-4 mb-3.5">
+      <div class="bg-white flex justify-start gap-3 py-2.5 px-2 rounded w-1/2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 stroke-orange-300"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"
+          />
+        </svg>
+
+        <p class="text-sm font-medium">محبوبترین </p>
+      </div>
+      <div class="bg-white flex justify-start gap-3 py-2.5 px-2 rounded w-1/2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 stroke-gray-300"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z"
+          />
+        </svg>
+        <p class="text-sm font-medium">فیلتر: برند اپل</p>
       </div>
     </div>
   </body>
