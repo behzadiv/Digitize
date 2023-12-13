@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digitize</title>
     <link rel="stylesheet" href="./build/tailwind.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
   <body class="bg-stone-100">
     <!-- َApp bar -->
@@ -69,7 +73,9 @@
       </div>
     </div>
     <!-- product section -->
-    <div class="flex gap-x-2.5 gap-y-8 flex-wrap justify-center md:justify-start">
+    <div
+      class="flex gap-x-2.5 gap-y-8 flex-wrap justify-center md:justify-start"
+    >
       <div class="flex flex-col bg-white p-1 rounded-xl shadow-md">
         <div
           class="bg-slate-200 rounded-xl relative flex items-center justify-center py-4 mb-5"
@@ -97,16 +103,83 @@
         <div class="flex flex-col px-2 border-b border-b-gray-300">
           <div class="flex justify-between mb-2">
             <p class="text-xs md:text-base text-orange-300">اپل</p>
-            <span>clors</span>
+            <div x-data="{color:'red'}" class="flex">
+              <div
+                @click="color='red'"
+                class="w-6 h-6 rounded-full bg-red-400 -ml-1.5 border-2 border-white cursor-pointer flex justify-center items-center"
+                :class="color==='red'? 'ring-1 ring-red-600' :''"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 stroke-white"
+                  x-show="color==='red'"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+              </div>
+              <div
+                @click="color='blue'"
+                class="w-6 h-6 rounded-full bg-blue-400 -ml-1.5 border-2 border-white cursor-pointer flex justify-center items-center"
+                :class="color==='blue'? 'ring-1 ring-blue-600' :''"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 stroke-white"
+                  x-show="color==='blue'"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+              </div>
+              <div
+                @click="color='orange'"
+                class="w-6 h-6 rounded-full bg-orange-400 border-2 border-white cursor-pointer flex justify-center items-center"
+                :class="color==='orange'? 'ring-1 ring-orange-600' :''"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 stroke-white"
+                  x-show="color==='orange'"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
           <p class="text-sm md:text-base font-semibold text-right mb-2">
             ساعت هوشمند اپل سری 6
           </p>
-          <span class="text-left  md:text-base text-orange-700 mb-2.5 font-semibold"
+          <span
+            class="text-left md:text-base text-orange-700 mb-2.5 font-semibold"
             >2،250،000 تومان</span
           >
         </div>
-        <button class="p-2 text-orange-700 font-semibold  md:text-base">مشاهده و سفارش</button>
+        <button class="p-2 text-orange-700 font-semibold md:text-base">
+          مشاهده و سفارش
+        </button>
       </div>
       <div class="flex flex-col bg-white p-1 rounded-xl shadow-md">
         <div
@@ -140,11 +213,14 @@
           <p class="text-sm md:text-base font-semibold text-right mb-2">
             ساعت هوشمند اپل سری 6
           </p>
-          <span class="text-left  md:text-base text-orange-700 mb-2.5 font-semibold"
+          <span
+            class="text-left md:text-base text-orange-700 mb-2.5 font-semibold"
             >2،250،000 تومان</span
           >
         </div>
-        <button class="p-2 text-orange-700 font-semibold  md:text-base">مشاهده و سفارش</button>
+        <button class="p-2 text-orange-700 font-semibold md:text-base">
+          مشاهده و سفارش
+        </button>
       </div>
       <div class="flex flex-col bg-white p-1 rounded-xl shadow-md">
         <div
@@ -178,11 +254,14 @@
           <p class="text-sm md:text-base font-semibold text-right mb-2">
             ساعت هوشمند اپل سری 6
           </p>
-          <span class="text-left  md:text-base text-orange-700 mb-2.5 font-semibold"
+          <span
+            class="text-left md:text-base text-orange-700 mb-2.5 font-semibold"
             >2،250،000 تومان</span
           >
         </div>
-        <button class="p-2 text-orange-700 font-semibold  md:text-base">مشاهده و سفارش</button>
+        <button class="p-2 text-orange-700 font-semibold md:text-base">
+          مشاهده و سفارش
+        </button>
       </div>
       <div class="flex flex-col bg-white p-1 rounded-xl shadow-md">
         <div
@@ -216,11 +295,14 @@
           <p class="text-sm md:text-base font-semibold text-right mb-2">
             ساعت هوشمند اپل سری 6
           </p>
-          <span class="text-left  md:text-base text-orange-700 mb-2.5 font-semibold"
+          <span
+            class="text-left md:text-base text-orange-700 mb-2.5 font-semibold"
             >2،250،000 تومان</span
           >
         </div>
-        <button class="p-2 text-orange-700 font-semibold  md:text-base">مشاهده و سفارش</button>
+        <button class="p-2 text-orange-700 font-semibold md:text-base">
+          مشاهده و سفارش
+        </button>
       </div>
       <div class="flex flex-col bg-white p-1 rounded-xl shadow-md">
         <div
@@ -254,11 +336,14 @@
           <p class="text-sm md:text-base font-semibold text-right mb-2">
             ساعت هوشمند اپل سری 6
           </p>
-          <span class="text-left  md:text-base text-orange-700 mb-2.5 font-semibold"
+          <span
+            class="text-left md:text-base text-orange-700 mb-2.5 font-semibold"
             >2،250،000 تومان</span
           >
         </div>
-        <button class="p-2 text-orange-700 font-semibold  md:text-base">مشاهده و سفارش</button>
+        <button class="p-2 text-orange-700 font-semibold md:text-base">
+          مشاهده و سفارش
+        </button>
       </div>
     </div>
   </body>
