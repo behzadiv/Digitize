@@ -79,8 +79,12 @@
       <div class="col-span-3 hidden md:block row-span-2 bg-white">
         <div class="p-6">
           <div class="text-xl font-bold text-orange-700 mb-5">دسته بندی</div>
-          <ul>
-            <li class="flex mb-5 relative">
+          <ul x-data="{selected:'phone'}">
+            <li
+              @click="selected='phone'"
+              :class="selected==='phone'? 'opacity-100' : 'opacity-30'"
+              class="flex mb-5 relative cursor-pointer"
+            >
               <span class="w-6 h-6 rounded-full bg-gray-200"></span>
               <div class="flex absolute top-2 right-2">
                 <svg
@@ -100,7 +104,11 @@
                 <p class="text-xl font-normal mr-2">تلفن همراه</p>
               </div>
             </li>
-            <li class="flex mb-5 relative opacity-30">
+            <li
+              @click="selected='lapTop'"
+              :class="selected==='lapTop'? 'opacity-100' : 'opacity-30'"
+              class="flex mb-5 relative cursor-pointer"
+            >
               <span class="w-6 h-6 rounded-full bg-gray-200"></span>
               <div class="flex absolute top-2 right-2">
                 <svg
@@ -120,7 +128,11 @@
                 <p class="text-xl font-normal mr-2">لپ تاپ</p>
               </div>
             </li>
-            <li class="flex mb-5 relative opacity-30">
+            <li
+              @click="selected='smartWatch'"
+              :class="selected==='smartWatch'? 'opacity-100' : 'opacity-30'"
+              class="flex mb-5 relative cursor-pointer"
+            >
               <span class="w-6 h-6 rounded-full bg-gray-200"></span>
               <div class="flex absolute top-2 right-2">
                 <svg
