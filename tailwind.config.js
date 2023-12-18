@@ -1,11 +1,11 @@
 module.exports = {
-    content: ["./public/**/*.{html,js}"],
-    theme: {
-      extend: {
-        fontFamily: {
-            sans: ["vazir"],
-          },
+  content: ["./public/**/*.{html,js}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["vazir"],
       },
     },
-    plugins: [],
-  }
+  },
+  plugins: [require("@tailwindcss/custom-forms")],
+};
