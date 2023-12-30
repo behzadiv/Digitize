@@ -84,94 +84,107 @@
               <li
                 @click="selected='phone'"
                 :class="selected==='phone'? 'opacity-100' : 'opacity-30'"
-                class="flex mb-5 relative cursor-pointer"
+                class="flex rounded-xl items-center mb-2 p-2 hover:bg-gray-100 cursor-pointer"
               >
-                <span class="w-6 h-6 rounded-full bg-gray-200"></span>
-                <div class="flex absolute top-2">
-                  <svg
-                    class="w-6 h-5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13 4.75v7.5c0 3-.75 3.75-3.75 3.75h-4.5c-3 0-3.75-.75-3.75-3.75v-7.5C1 1.75 1.75 1 4.75 1h4.5c3 0 3.75.75 3.75 3.75ZM8.5 3.625h-3"
-                      stroke="#222F5D"
-                      stroke-width="1.125"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7 13.825A1.163 1.163 0 1 0 7 11.5a1.163 1.163 0 0 0 0 2.325Z"
-                      stroke="#222F5D"
-                      stroke-width="1.125"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="text-xl font-normal mr-2">تلفن همراه</p>
+                <div class="flex relative">
+                  <span class="w-6 h-6 rounded-full bg-gray-200"></span>
+                  <div class="flex items-center absolute gap-4 top-1 right-1">
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 4.75v7.5c0 3-.75 3.75-3.75 3.75h-4.5c-3 0-3.75-.75-3.75-3.75v-7.5C1 1.75 1.75 1 4.75 1h4.5c3 0 3.75.75 3.75 3.75ZM8.5 3.625h-3"
+                        stroke="#222F5D"
+                        stroke-width="1.125"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7 13.825A1.163 1.163 0 1 0 7 11.5a1.163 1.163 0 0 0 0 2.325Z"
+                        stroke="#222F5D"
+                        stroke-width="1.125"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </div>
+                <p class="md:text-sm lg:text-xl font-semibold mr-2">
+                  تلفن همراه
+                </p>
               </li>
               <li
-                @click="selected='lapTop'"
-                :class="selected==='lapTop'? 'opacity-100' : 'opacity-30'"
-                class="flex mb-5 relative cursor-pointer"
+                @click="selected='labtop'"
+                :class="selected==='labtop'? 'opacity-100' : 'opacity-30'"
+                class="flex rounded-xl items-center mb-2 p-2 hover:bg-gray-100 cursor-pointer"
               >
-                <span class="w-6 h-6 rounded-full bg-gray-200"></span>
-                <div class="flex absolute top-2">
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.293 1.333H11.7c2.373 0 2.967.594 2.967 2.96v4.22c0 2.374-.594 2.96-2.96 2.96H4.293c-2.366.007-2.96-.586-2.96-2.953V4.294c0-2.367.594-2.96 2.96-2.96ZM8 11.48v3.187M1.333 8.666h13.334M5 14.666h6"
-                      stroke="#222F5D"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p class="text-xl font-normal mr-2">لپ تاپ</p>
+                <div class="flex relative">
+                  <span class="w-6 h-6 rounded-full bg-gray-200"></span>
+                  <div class="flex items-center absolute gap-4 top-1 right-1">
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 1.333H11.7c2.373 0 2.967.594 2.967 2.96v4.22c0 2.374-.594 2.96-2.96 2.96H4.293c-2.366.007-2.96-.586-2.96-2.953V4.294c0-2.367.594-2.96 2.96-2.96ZM8 11.48v3.187M1.333 8.666h13.334M5 14.666h6"
+                        stroke="#222F5D"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </div>
+                <p class="md:text-sm lg:text-xl font-semibold mr-2">لپ تاپ</p>
               </li>
               <li
                 @click="selected='smartWatch'"
                 :class="selected==='smartWatch'? 'opacity-100' : 'opacity-30'"
-                class="flex mb-5 relative cursor-pointer"
+                class="flex rounded-xl items-center mb-2 p-2 hover:bg-gray-100 cursor-pointer"
               >
-                <span class="w-6 h-6 rounded-full bg-gray-200"></span>
-                <div class="flex absolute top-2">
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.666 12.667h4.667c1.553 0 2.333-.78 2.333-2.333V5.667c0-1.553-.78-2.333-2.333-2.333H5.666c-1.553 0-2.333.78-2.333 2.333v4.667c0 1.553.78 2.333 2.333 2.333ZM10.666 1.333H5.333M10.666 14.666H5.333"
-                      stroke="#222F5D"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.667 6.333v2h2"
-                      stroke="#222F5D"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                <div class="flex relative">
+                  <span class="w-6 h-6 rounded-full bg-gray-200"></span>
+                  <div class="flex items-center absolute gap-4 top-1 right-1">
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.666 12.667h4.667c1.553 0 2.333-.78 2.333-2.333V5.667c0-1.553-.78-2.333-2.333-2.333H5.666c-1.553 0-2.333.78-2.333 2.333v4.667c0 1.553.78 2.333 2.333 2.333ZM10.666 1.333H5.333M10.666 14.666H5.333"
+                        stroke="#222F5D"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.667 6.333v2h2"
+                        stroke="#222F5D"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                <p class="text-xl font-normal mr-2">ساعت هوشمند</p>
+                <p class="md:text-sm lg:text-xl font-semibold mr-2">
+                  ساعت هوشمند
+                </p>
               </li>
             </ul>
           </div>
           <div>
             <div class="text-xl font-bold text-orange-700 mb-5">فیلتر</div>
             <div
-              x-data="{ isOpen: false }"
+              x-data="{ isBrandOpen: false }"
               class="relative md:text-sm lg:text-xl md:font-light lg:font-normal py-4"
             >
-              <div @click="isOpen=!isOpen" class="flex relative">
+              <div
+                @click="isBrandOpen=!isBrandOpen"
+                class="flex relative font-semibold"
+              >
                 <span class="w-6 h-6 rounded-full bg-gray-200"></span>
                 <div class="flex items-center absolute gap-4 top-1 right-1">
                   <svg
@@ -204,7 +217,7 @@
                     stroke-width="1.5"
                     stroke="currentColor"
                     class="w-5 h-5 pl-2 transition-all duration-500"
-                    :class="isOpen? ' rotate-180':''"
+                    :class="isBrandOpen? ' rotate-180':''"
                   >
                     <path
                       stroke-linecap="round"
@@ -214,58 +227,68 @@
                   </svg>
                 </div>
               </div>
-              <div x-show="isOpen" class="py-5">
-                <div
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  x-data="{isSelected:false}"
-                  @click="isSelected=!isSelected"
+              <div
+                x-show="isBrandOpen"
+                class="flex flex-col gap-y-2 px-2 pt-4 text-black"
+              >
+                <label
+                  for="apple"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">اپل</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="brand"
+                    id="apple"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">اپل</span>
+                </label>
+                <label
+                  for="samsung"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">سامسونگ</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="brand"
+                    id="samsung"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">سامسونگ</span>
+                </label>
+                <label
+                  for="xiaomi"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">شیائومی</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="brand"
+                    id="xiaomi"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">شیائومی</span>
+                </label>
+                <label
+                  for="huawi"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">هوآوی</span>
-                </div>
+                  <input
+                    type="checkbox"
+                    name="brand"
+                    id="huawi"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">هوآوی</span>
+                </label>
               </div>
             </div>
             <div
-              x-data="{ isOpen: false }"
+              x-data="{ isColorOpen: false }"
               class="relative md:text-sm lg:text-xl md:font-light lg:font-normal py-4"
             >
-              <div @click="isOpen=!isOpen" class="flex relative">
+              <div
+                @click="isColorOpen=!isColorOpen"
+                class="flex relative font-semibold"
+              >
                 <span class="w-6 h-6 rounded-full bg-gray-200"></span>
                 <div class="flex items-center absolute gap-4 top-1 right-1">
                   <svg
@@ -303,7 +326,7 @@
                     stroke-width="1.5"
                     stroke="currentColor"
                     class="w-5 h-5 pl-2 transition-all duration-500"
-                    :class="isOpen? ' rotate-180':''"
+                    :class="isColorOpen? ' rotate-180':''"
                   >
                     <path
                       stroke-linecap="round"
@@ -313,58 +336,65 @@
                   </svg>
                 </div>
               </div>
-              <div x-show="isOpen" class="py-5">
-                <div
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  x-data="{isSelected:false}"
-                  @click="isSelected=!isSelected"
+              <div x-show="isColorOpen" class="py-5">
+                <label
+                  for="black"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">مشکی</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="color"
+                    id="black"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">مشکی</span>
+                </label>
+                <label
+                  for="gold"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">گلد</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="color"
+                    id="gold"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">گلد</span>
+                </label>
+                <label
+                  for="white"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">سفید</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="color"
+                    id="white"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">سفید</span>
+                </label>
+                <label
+                  for="blue"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">آبی</span>
-                </div>
+                  <input
+                    type="checkbox"
+                    name="color"
+                    id="blue"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">آبی</span>
+                </label>
               </div>
             </div>
             <div
-              x-data="{ isOpen: false }"
+              x-data="{ isPriceRangeOpen: false }"
               class="relative md:text-sm lg:text-xl md:font-light lg:font-normal py-4"
             >
-              <div @click="isOpen=!isOpen" class="flex relative">
+              <div
+                @click="isPriceRangeOpen=!isPriceRangeOpen"
+                class="flex relative font-semibold"
+              >
                 <span class="w-6 h-6 rounded-full bg-gray-200"></span>
                 <div class="flex items-center absolute gap-4 top-1 right-1">
                   <svg
@@ -395,7 +425,7 @@
                     stroke-width="1.5"
                     stroke="currentColor"
                     class="w-5 h-5 pl-2 transition-all duration-500"
-                    :class="isOpen? ' rotate-180':''"
+                    :class="isPriceRangeOpen? ' rotate-180':''"
                   >
                     <path
                       stroke-linecap="round"
@@ -405,51 +435,55 @@
                   </svg>
                 </div>
               </div>
-              <div x-show="isOpen" class="py-5">
-                <div
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  x-data="{isSelected:false}"
-                  @click="isSelected=!isSelected"
+              <div x-show="isPriceRangeOpen" class="py-5">
+                <label
+                  for="0to10"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">0تومان - 5 میلیون</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="brand"
+                    id="0to10"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">0تومان - 5 میلیون</span>
+                </label>
+                <label
+                  for="10to15"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">5تومان - 10 میلیون</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="brand"
+                    id="10to15"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">10تومان - 15 میلیون</span>
+                </label>
+                <label
+                  for="15t020"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">10تومان - 20 میلیون</span>
-                </div>
-                <div
-                  x-data="{isSelected:false}"
-                  class="grid grid-cols-12 cursor-pointer py-2"
-                  @click="isSelected=!isSelected"
+                  <input
+                    type="checkbox"
+                    name="brand"
+                    id="15t020"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">15تومان - 20 میلیون</span>
+                </label>
+                <label
+                  for="moreThan20"
+                  class="flex hover:bg-gray-100 w-full py-2 rounded-xl px-2"
                 >
-                  <div
-                    class="w-5 h-5 rounded col-span-2"
-                    :class="isSelected?'bg-orange-400':'border-2 border-slate-800'"
-                  ></div>
-                  <span class="col-span-10">بالای 20 میلیون</span>
-                </div>
+                  <input
+                    type="checkbox"
+                    name="brand"
+                    id="moreThan20"
+                    class="form-checkbox border focus:ring-1 focus:ring-offset-2 text-orange-400 focus:ring-orange-400 rounded"
+                  />
+                  <span class="mr-3">بالای 20 میلیون</span>
+                </label>
               </div>
             </div>
           </div>
