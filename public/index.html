@@ -491,8 +491,76 @@
       </div>
 
       <!-- sort section -->
-      <div class="col-span-9 hidden md:block row-span-1 bg-white p-4">
-        sortSection
+      <div class="col-span-9 hidden md:block row-span-1">
+        <div
+          x-data="{selected:'favorite'}"
+          class="bg-white flex items-center gap-x-4 px-4 rounded-lg md:text-sm lg:text-base"
+        >
+          <div class="p-1 rounded-md bg-orange-100">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 stroke-orange-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"
+              />
+            </svg>
+          </div>
+          <button
+            @click="selected='favorite'"
+            class="py-4 font-bold relative"
+            :class="selected==='favorite'? 'text-slate-800':'text-gray-300'"
+          >
+            محبوبترین محصول
+            <span
+              x-show="selected==='favorite'"
+              class="text-xl text-orange-400 absolute top-0"
+              >.</span
+            >
+          </button>
+          <button
+            @click="selected='mostReview'"
+            class="py-4 font-bold relative"
+            :class="selected==='mostReview'? 'text-slate-800':'text-gray-300'"
+          >
+            پربازدیدترین محصول
+            <span
+              x-show="selected==='mostReview'"
+              class="text-xl text-orange-400 absolute top-0"
+              >.</span
+            >
+          </button>
+          <button
+            @click="selected='moreExpensive'"
+            class="py-4 font-bold relative"
+            :class="selected==='moreExpensive'? 'text-slate-800':'text-gray-300'"
+          >
+            گران ترین محصول
+            <span
+              x-show="selected==='moreExpensive'"
+              class="text-xl text-orange-400 absolute top-0"
+              >.</span
+            >
+          </button>
+          <button
+            @click="selected='cheap'"
+            class="py-4 font-bold relative"
+            :class="selected==='cheap'? 'text-slate-800':'text-gray-300'"
+          >
+            ارزان ترین محصول
+            <span
+              x-show="selected==='cheap'"
+              class="text-xl text-orange-400 absolute top-0"
+              >.</span
+            >
+          </button>
+        </div>
       </div>
       <div class="col-span-12 md:col-span-9">
         <!-- product section -->
