@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         sans: ["vazir"],
       },
+      screens: {
+        md: "890px",
+      },
     },
   },
   plugins: [require("@tailwindcss/custom-forms")],
