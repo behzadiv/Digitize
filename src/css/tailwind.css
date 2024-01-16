@@ -23,3 +23,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+.btn_primary {
+    @apply py-2.5 px-4 bg-orange-400 text-white rounded text-base font-medium;
+  }
+.btn_secondary {
+    @apply py-2.5 px-4 border border-orange-400  text-orange-400 rounded text-base font-medium;
+  }
