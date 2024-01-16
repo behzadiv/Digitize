@@ -12,7 +12,9 @@
   </head>
   <body class="bg-stone-100">
     <!-- App bar -->
-    <div class="flex items-center justify-between px-5 mt-10 mb-6 md:hidden">
+    <div
+      class="flex items-center justify-between px-5 md:bg-transparent mt-10 mb-6 md:hidden"
+    >
       <a
         class="w-7 h-7 bg-white flex justify-center items-center rounded p-1 shadow-[0_2px_8px_0_rgba(0,0,0,0.1)]"
         href="#"
@@ -139,14 +141,20 @@
       </div>
     </nav>
     <div
-      class="container max-w-screen-2xl mx-auto hidden md:grid md:grid-cols-12 md:grid-rows-[20px_minmax(500px,_1fr)_100px] gap-4 px-4"
+      class="container max-w-screen-2xl mx-auto md:grid md:grid-cols-12 md:grid-rows-[20px_minmax(500px,_1fr)_100px] gap-4 px-4"
     >
-      <div class="col-span-8 flex items-center justify-between px-2 text-xl font-semibold">
+      <div
+        class="hidden col-span-8 md:flex items-center justify-between px-2 text-xl font-semibold"
+      >
         <span>سبد خرید</span>
         <span class="text-orange-400">بازگشت به خانه</span>
       </div>
-      <div class="col-span-8 flex flex-col md:bg-white md:p-5 md:rounded-xl">
-        <div class="flex justify-between py-2 px-5">
+      <div
+        class="col-span-8 flex flex-col gap-y-2.5 md:bg-white md:p-5 md:rounded-xl"
+      >
+        <div
+          class="flex justify-between py-2 rounded-lg px-5 bg-white md:bg-transparent"
+        >
           <div class="flex w-20 h-28">
             <img src="../assets/photos/1.png" alt="" />
           </div>
@@ -189,8 +197,10 @@
             </div>
           </div>
         </div>
-        <hr class="w-3/4 mr-8 bg-gray-200" />
-        <div class="flex justify-between py-2 px-5">
+        <hr class="w-3/4 hidden md:block mr-8 bg-gray-200" />
+        <div
+          class="flex justify-between py-2 rounded-lg px-5 bg-white md:bg-transparent"
+        >
           <div class="flex w-20 h-28">
             <img src="../assets/photos/1.png" alt="" />
           </div>
@@ -233,8 +243,10 @@
             </div>
           </div>
         </div>
-        <hr class="w-3/4 mr-8 bg-gray-200" />
-        <div class="flex justify-between py-2 px-5">
+        <hr class="w-3/4 hidden md:block mr-8 bg-gray-200" />
+        <div
+          class="flex justify-between py-2 rounded-lg px-5 bg-white md:bg-transparent"
+        >
           <div class="flex w-20 h-28">
             <img src="../assets/photos/1.png" alt="" />
           </div>
@@ -277,7 +289,7 @@
             </div>
           </div>
         </div>
-        <hr class="w-3/4 mr-8 bg-gray-200" />
+        <hr class="w-3/4 hidden md:block mr-8 bg-gray-200" />
       </div>
       <!-- Desktop product seller -->
       <div
@@ -313,13 +325,21 @@
         </div>
         <div class="flex flex-col gap-y-3 text-lg font-bold">
           <button class="w-full btn_primary">اضافه به سبد خرید</button>
-          <button
-            class="w-full btn_secondary py-4"
-          >
-            انصراف از خرید
-          </button>
+          <button class="w-full btn_secondary py-4">انصراف از خرید</button>
         </div>
       </div>
+      <!-- Mobile product seller -->
+      <div class="bg-white md:hidden mt-2 text-xl px-4 py-6 rounded-lg">
+        <div class="flex justify-between items-center mb-4">
+          <span>مجموع قیمت:</span>
+          <span class="text-orange-600 text-left">۶,۵۰۰,۰۰۰ تومان</span>
+        </div>
+        <span class="text-sm cursor-pointer">کد تخفیف دارید؟</span>
+      </div>
+    </div>
+    <!-- Buy btn -->
+    <div class="md:hidden fixed bottom-20 flex justify-center w-full px-4">
+      <button class="btn_primary w-full ">ادامه فرآیند خرید</button>
     </div>
     <!-- Bottom Navbar -->
     <nav
