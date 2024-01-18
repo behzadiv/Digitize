@@ -140,6 +140,7 @@
         </div>
       </div>
     </nav>
+    <!-- Cart items -->
     <div
       class="container max-w-screen-2xl mx-auto md:grid md:grid-cols-12 md:grid-rows-[20px_minmax(500px,_1fr)_100px] gap-4 px-4"
     >
@@ -149,154 +150,159 @@
         <span>سبد خرید</span>
         <span class="text-orange-400">بازگشت به خانه</span>
       </div>
-      <div
-        class="col-span-8 flex flex-col gap-y-2.5 md:bg-white md:p-5 md:rounded-xl"
-      >
-        <div
-          class="flex justify-between py-2 rounded-lg px-5 bg-white md:bg-transparent"
-        >
-          <div class="flex w-20 h-28">
-            <img src="../assets/photos/1.png" alt="" />
-          </div>
+      <div class="md:col-span-8">
+        <div class="md:bg-white md:rounded-lg py-5 flex flex-col gap-y-2.5">
           <div
-            class="flex w-full grow flex-col justify-center gap-y-10 px-10 py-3 text-lg"
+            class="flex justify-between gap-x-5 py-2 rounded-lg px-2 md:px-5 bg-white md:bg-transparent"
           >
-            <span>ساعت هوشمند اپل سری ۶</span>
-            <span class="font-semibold text-orange-400">۶,۰۹۰,۰۰۰ تومان</span>
+            <div class="flex w-20 h-24 md:w-24 md:h-28">
+              <img src="../assets/photos/1.png" alt="" />
+            </div>
+            <div
+              class="flex w-full grow flex-col justify-center gap-y-5 md:gap-y-10 md:px-10 py-3 text-sm md:text-xl font-semibold"
+            >
+              <span>ساعت هوشمند اپل سری ۶</span>
+              <span class="font-semibold text-orange-400">۶,۰۹۰,۰۰۰ تومان</span>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-y-7 p-2 text-sm md:text-lg"
+            >
+              <span class="flex justify-end cursor-pointer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-orange-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+              <div class="flex justify-center items-center gap-x-2 md:gap-x-4">
+                <span
+                  class="flex justify-center items-center rounded-full w-6 h-6 cursor-pointer bg-gray-200"
+                  >+</span
+                >
+                <span
+                  class="flex justify-center items-center border border-orange-300 rounded w-6 h-6 bg-white py-4"
+                  >1</span
+                >
+                <span
+                  class="flex justify-center items-center rounded-full w-6 h-6 cursor-pointer bg-orange-400"
+                  >-</span
+                >
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col justify-center gap-y-7 p-2">
-            <span class="flex justify-end"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-orange-400"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
-            </span>
-            <div class="flex justify-center items-center gap-x-4">
-              <span
-                class="flex justify-center items-center rounded-full w-6 h-6 bg-gray-200"
-                >+</span
-              >
-              <span
-                class="flex justify-center items-center border border-orange-300 rounded w-6 h-6 bg-white py-4"
-                >1</span
-              >
-              <span
-                class="flex justify-center items-center rounded-full w-6 h-6 bg-orange-400"
-                >-</span
-              >
+          <hr class="w-3/4 hidden md:block mr-8 bg-gray-200" />
+          <div
+            class="flex justify-between gap-x-5 py-2 rounded-lg px-2 md:px-5 bg-white md:bg-transparent"
+          >
+            <div class="flex w-20 h-24 md:w-24 md:h-28">
+              <img src="../assets/photos/1.png" alt="" />
+            </div>
+            <div
+              class="flex w-full grow flex-col justify-center gap-y-5 md:gap-y-10 md:px-10 py-3 text-sm md:text-xl font-semibold"
+            >
+              <span>ساعت هوشمند اپل سری ۶</span>
+              <span class="font-semibold text-orange-400">۶,۰۹۰,۰۰۰ تومان</span>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-y-7 p-2 text-sm md:text-lg"
+            >
+              <span class="flex justify-end cursor-pointer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-orange-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+              <div class="flex justify-center items-center gap-x-2 md:gap-x-4">
+                <span
+                  class="flex justify-center items-center rounded-full w-6 h-6 cursor-pointer bg-gray-200"
+                  >+</span
+                >
+                <span
+                  class="flex justify-center items-center border border-orange-300 rounded w-6 h-6 bg-white py-4"
+                  >1</span
+                >
+                <span
+                  class="flex justify-center items-center rounded-full w-6 h-6 cursor-pointer bg-orange-400"
+                  >-</span
+                >
+              </div>
+            </div>
+          </div>
+          <hr class="w-3/4 hidden md:block mr-8 bg-gray-200" />
+          <div
+            class="flex justify-between gap-x-5 py-2 rounded-lg px-2 md:px-5 bg-white md:bg-transparent"
+          >
+            <div class="flex w-20 h-24 md:w-24 md:h-28">
+              <img src="../assets/photos/1.png" alt="" />
+            </div>
+            <div
+              class="flex w-full grow flex-col justify-center gap-y-5 md:gap-y-10 md:px-10 py-3 text-sm md:text-xl font-semibold"
+            >
+              <span>ساعت هوشمند اپل سری ۶</span>
+              <span class="font-semibold text-orange-400">۶,۰۹۰,۰۰۰ تومان</span>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-y-7 p-2 text-sm md:text-lg"
+            >
+              <span class="flex justify-end cursor-pointer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-orange-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+              <div class="flex justify-center items-center gap-x-2 md:gap-x-4">
+                <span
+                  class="flex justify-center items-center rounded-full w-6 h-6 cursor-pointer bg-gray-200"
+                  >+</span
+                >
+                <span
+                  class="flex justify-center items-center border border-orange-300 rounded w-6 h-6 bg-white py-4"
+                  >1</span
+                >
+                <span
+                  class="flex justify-center items-center rounded-full w-6 h-6 cursor-pointer bg-orange-400"
+                  >-</span
+                >
+              </div>
             </div>
           </div>
         </div>
-        <hr class="w-3/4 hidden md:block mr-8 bg-gray-200" />
-        <div
-          class="flex justify-between py-2 rounded-lg px-5 bg-white md:bg-transparent"
-        >
-          <div class="flex w-20 h-28">
-            <img src="../assets/photos/1.png" alt="" />
-          </div>
-          <div
-            class="flex w-full grow flex-col justify-center gap-y-10 px-10 py-3 text-lg"
-          >
-            <span>ساعت هوشمند اپل سری ۶</span>
-            <span class="font-semibold text-orange-400">۶,۰۹۰,۰۰۰ تومان</span>
-          </div>
-          <div class="flex flex-col justify-center gap-y-7 p-2">
-            <span class="flex justify-end"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-orange-400"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
-            </span>
-            <div class="flex justify-center items-center gap-x-4">
-              <span
-                class="flex justify-center items-center rounded-full w-6 h-6 bg-gray-200"
-                >+</span
-              >
-              <span
-                class="flex justify-center items-center border border-orange-300 rounded w-6 h-6 bg-white py-4"
-                >1</span
-              >
-              <span
-                class="flex justify-center items-center rounded-full w-6 h-6 bg-orange-400"
-                >-</span
-              >
-            </div>
-          </div>
-        </div>
-        <hr class="w-3/4 hidden md:block mr-8 bg-gray-200" />
-        <div
-          class="flex justify-between py-2 rounded-lg px-5 bg-white md:bg-transparent"
-        >
-          <div class="flex w-20 h-28">
-            <img src="../assets/photos/1.png" alt="" />
-          </div>
-          <div
-            class="flex w-full grow flex-col justify-center gap-y-10 px-10 py-3 text-lg"
-          >
-            <span>ساعت هوشمند اپل سری ۶</span>
-            <span class="font-semibold text-orange-400">۶,۰۹۰,۰۰۰ تومان</span>
-          </div>
-          <div class="flex flex-col justify-center gap-y-7 p-2">
-            <span class="flex justify-end"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-orange-400"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
-            </span>
-            <div class="flex justify-center items-center gap-x-4">
-              <span
-                class="flex justify-center items-center rounded-full w-6 h-6 bg-gray-200"
-                >+</span
-              >
-              <span
-                class="flex justify-center items-center border border-orange-300 rounded w-6 h-6 bg-white py-4"
-                >1</span
-              >
-              <span
-                class="flex justify-center items-center rounded-full w-6 h-6 bg-orange-400"
-                >-</span
-              >
-            </div>
-          </div>
-        </div>
-        <hr class="w-3/4 hidden md:block mr-8 bg-gray-200" />
       </div>
       <!-- Desktop product seller -->
       <div
-        class="hidden bg-white md:grid md:col-span-4 rounded-md text-xs xl:text-base md:pt-4 md:max-h-[calc(100vh_-_68vh)] md:row-span-2"
+        class="hidden md:flex md:flex-col gap-y-4 md:col-span-4 rounded-lg text-xs xl:text-base"
       >
         <div
-          class="flex flex-col justify-start mb-6 gap-y-4 p-2 py-5 rounded-md md:text-lg lg:text-xl"
+          class="bg-white h-fit flex flex-col gap-y-4 p-2 py-5 rounded-md md:text-lg lg:text-xl"
         >
           <div class="flex justify-between items-center px-2">
             <span> مجموع قیمت:</span>
@@ -304,12 +310,16 @@
           </div>
           <div class="flex justify-between items-center px-2">
             <span> کد تخفیف:</span>
-            <div class="flex items-center justify-end -ml-2">
+            <div
+              class="flex items-center justify-end bg-gray-200 rounded-lg overflow-hidden"
+            >
               <input
                 type="text"
-                class="w-1/2 border border-slate-700 border-l-0 rounded-r-md py-1.5 -ml-2 text-left pl-5 text-gray-200"
+                dir="ltr"
+                class="border-0 outline-none bg-transparent py-1.5 pl-5 w-full max-w-[150px]"
+                placeholder="AD-CDF"
               />
-              <button class="btn_primary rounded-r-none">تایید</button>
+              <button class="btn_primary rounded-none">تایید</button>
             </div>
           </div>
           <div class="flex justify-between items-center px-2">
@@ -323,7 +333,7 @@
             >
           </div>
         </div>
-        <div class="flex flex-col gap-y-3 text-lg font-bold pt-10">
+        <div class="flex flex-col gap-y-3 text-lg font-bold">
           <button class="w-full btn_primary">اضافه به سبد خرید</button>
           <button class="w-full btn_secondary py-4">انصراف از خرید</button>
         </div>
@@ -334,11 +344,28 @@
           <span>مجموع قیمت:</span>
           <span class="text-orange-600 text-left">۶,۵۰۰,۰۰۰ تومان</span>
         </div>
-        <span class="text-sm cursor-pointer">کد تخفیف دارید؟</span>
+        <div class="flex flex-col text-sm" x-data="{hasCode:false}">
+          <span @click="hasCode=!hasCode" x-show="!hasCode" class="text-sm cursor-pointer w-fit"
+            >کد تخفیف دارید؟</span
+          >
+          <div x-show="hasCode">
+            <input
+              type=" text"
+              dir="ltr"
+              class="bg-gray-200 max-w-[150px] pl-2 py-1.5 outline-none rounded"
+              placeholder="AD-CSDF"
+            />
+            <button @click="hasCode=!hasCode" class="text-orange-400">
+              تایید
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Buy btn -->
-    <div class="md:hidden fixed bottom-20 flex justify-center w-full px-4">
+    <div
+      class="md:hidden sticky bottom-20 flex justify-center w-full px-4 mt-28"
+    >
       <button class="btn_primary w-full">ادامه فرآیند خرید</button>
     </div>
     <!-- Bottom Navbar -->
@@ -457,7 +484,7 @@
     </nav>
     <!-- Footer desktop -->
     <div
-      class="md:sticky md:bottom-0 hidden bg-white md:grid grid-cols-4 grid-rows-[70px_minmax(300px,_1fr)_0px] w-full mt-10 pt-10"
+      class="md:bottom-0 hidden bg-white md:grid grid-cols-4 grid-rows-[70px_minmax(300px,_1fr)_0px] w-full mt-10 pt-10"
     >
       <div class="flex items-center pr-20 py-10 col-span-3">
         <svg
